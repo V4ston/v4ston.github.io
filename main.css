@@ -205,7 +205,7 @@ body {
 .titoletto:hover,
 .titolo:hover,
 .ling p:hover,
-.tes p:hover{
+.tes p:hover {
     color: rgba(0, 128, 0, 1) !important;
 }
 
@@ -307,6 +307,39 @@ body {
     body.light-mode .nav-link {
         border-bottom: 2px solid #000;
     }
+
+    /* F O R M */
+
+    .login-card {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .login-card .titolo {
+        font-size: 24pt;
+    }
+
+    .login-card .titolo:hover {
+        font-size: 28pt;
+    }
+
+    .login-input {
+        padding: 8px !important;
+    }
+
+    .navbar-container .container-fluid {
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        flex-direction: row !important;
+    }
+
+    .nav-link {
+        white-space: nowrap;
+        font-size: 0.9rem;
+        border-bottom: none !important;
+        text-decoration: none !important;
+        margin-right: 15px ;
+    }
 }
 
 /* M O D A L I T A' L I G H T */
@@ -330,7 +363,7 @@ body.light-mode .overlay {
 }
 
 body.light-mode .navbar,
-body.light-mode .container{
+body.light-mode .container {
 
     background: #ddd;
     border: 2px solid #333;
@@ -376,6 +409,80 @@ body.light-mode .tes p:hover {
     color: rgba(0, 128, 0, 1) !important;
 }
 
+/* F O R M */
+
 html {
     scroll-behavior: smooth;
+}
+
+.login-body-fix {
+    background: linear-gradient(to right, #040404, #030303, #050505, #070707, #090909, #0a0a0a);
+    min-height: 100vh;
+}
+
+.login-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+.login-card {
+
+    width: 100%;
+    max-width: 450px;
+    padding: 40px;
+    background: #333;
+    border: 2px solid #ccc !important;
+    border-radius: 5px;
+
+    transition: border-color 1s ease;
+}
+
+.login-card .titolo {
+    font-size: 32pt;
+    color: #ccc;
+    text-align: center;
+    transition: color 1s ease, font-size 0.5s ease;
+}
+
+.login-card .titolo:hover {
+    color: rgba(0, 128, 0, 1);
+}
+
+.login-card .titolettino {
+    font-size: 14pt;
+    color: #ccc;
+    transition: color 1s ease;
+}
+
+.login-card .titolettino:hover {
+    color: rgba(0, 128, 0, 1);
+}
+
+.login-input {
+    padding: 12px;
+    background: #555;
+    color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-submit-style {
+    background: none;
+    padding: 12px;
+    width: 100%;
+    font-size: 14pt;
+    border: 2px solid #ccc;
+    color: #ccc;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.btn-submit-style:hover {
+    background: rgba(0, 128, 0, 0.5);
+    color: #fff;
 }

@@ -13,7 +13,6 @@ ready(() => {
 })
 
 const DarkLight = document.querySelector(".mode-navbar");
-
 const savedTheme = localStorage.getItem("theme");
 
 if (savedTheme === "light") {
